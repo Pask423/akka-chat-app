@@ -1,6 +1,8 @@
 ### Info
 
-Repo for my article about writing [chat app in Akka](https://dzone.com/articles/writing-a-chat-with-akka).
+Repo for my article about writing chat app in Akka:
+1. [Medium](https://medium.com/@PaskSoftware/chat-with-akka-5b39af735bba)
+2. [Dzone](https://dzone.com/articles/writing-a-chat-with-akka)
 
 
 ### Running

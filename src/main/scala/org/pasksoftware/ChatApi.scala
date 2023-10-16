@@ -57,7 +57,7 @@ class ChatApi(service: ChatService, store: ActorRef[StoreCommand], logger: Logge
     }
   }
 
-  def websocketFlow(userName: String, chatActor: ActorRef[ChatCommand]): Flow[Message, Message, Any] = {
+  private def websocketFlow(userName: String, chatActor: ActorRef[ChatCommand]): Flow[Message, Message, Any] = {
     val source: Source[TextMessage, Unit] =
       ActorSource.actorRef[String](PartialFunction.empty, PartialFunction.empty, 5, OverflowStrategy.fail)
         .map[TextMessage](TextMessage(_))
